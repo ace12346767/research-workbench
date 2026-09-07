@@ -1,0 +1,422 @@
+[
+  {
+    "id": "F09",
+    "group": "focus_one_point",
+    "split": "validation",
+    "expected": "fast",
+    "text": "My only concern right now is this one decision; the wider discussion can wait.",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.8410761371696096,
+      "margin": 0.0350597810804566,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "F10",
+    "group": "focus_one_point",
+    "split": "validation",
+    "expected": "fast",
+    "text": "这次的终点就是确认这一处，确认完我们就先停在这里。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "F17",
+    "group": "essential_result",
+    "split": "validation",
+    "expected": "fast",
+    "text": "有用的结果和不能忽略的提醒留下，其余介绍可以先拿掉。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "F20",
+    "group": "essential_result",
+    "split": "validation",
+    "expected": "fast",
+    "text": "保留能让我行动的内容就行，暂时别把讨论范围越拉越大。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "S07",
+    "group": "understand_connections",
+    "split": "validation",
+    "expected": "standard",
+    "text": "这两个说法看起来很像，它们的区别在哪里，为什么要分开？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "S10",
+    "group": "understand_connections",
+    "split": "validation",
+    "expected": "standard",
+    "text": "把这里缺掉的来由补给我，否则我只能记住结果而不能理解它。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "S17",
+    "group": "complete_and_check",
+    "split": "validation",
+    "expected": "standard",
+    "text": "关键环节帮我串起来，做完后我应该看到什么变化？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "S20",
+    "group": "complete_and_check",
+    "split": "validation",
+    "expected": "standard",
+    "text": "我希望自己能够把它做完，并且知道结果为什么算是达标。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "D09",
+    "group": "assumptions_counterexamples",
+    "split": "validation",
+    "expected": "deep",
+    "text": "What would have to be true for that conclusion to hold, and what evidence could overturn it?",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8417799188083905,
+      "margin": 0.027551237277016694,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "D10",
+    "group": "assumptions_counterexamples",
+    "split": "validation",
+    "expected": "deep",
+    "text": "有没有一个不违反已知条件的反例，能推翻这条推断？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.899368308362122,
+      "margin": 0.02147284504916247,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "D17",
+    "group": "interactions_boundaries",
+    "split": "validation",
+    "expected": "deep",
+    "text": "眼前结果看起来符合预期，有没有延迟出现的影响会把它反转？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8753775991584086,
+      "margin": 0.020117597070155147,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "D20",
+    "group": "interactions_boundaries",
+    "split": "validation",
+    "expected": "deep",
+    "text": "当前的取舍在别的约束下会不会反过来，什么条件会使原来的优势变成代价？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8870955238803776,
+      "margin": 0.017065547085231003,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "N07",
+    "group": "neutral_tone",
+    "split": "validation",
+    "expected": null,
+    "text": "继续吧。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "N10",
+    "group": "neutral_tone",
+    "split": "validation",
+    "expected": null,
+    "text": "这个我还没决定。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.8927409930210125,
+      "margin": 0.019917107081023122,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "N17",
+    "group": "topic_without_preference",
+    "split": "validation",
+    "expected": null,
+    "text": "我想了解分布式系统。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "N20",
+    "group": "topic_without_preference",
+    "split": "validation",
+    "expected": null,
+    "text": "把表头里的空格替换成下划线。",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8706888076459135,
+      "margin": 0.01604166457741829,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": true
+  },
+  {
+    "id": "N27",
+    "group": "quoted_reference",
+    "split": "validation",
+    "expected": null,
+    "text": "“把主要过程交代清楚，别跳过关键环节。”",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "N30",
+    "group": "quoted_reference",
+    "split": "validation",
+    "expected": null,
+    "text": "~~~text\n先告诉我最关键的结果，背景可以省略。\n~~~",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "N37",
+    "group": "constraints_and_ambiguity",
+    "split": "validation",
+    "expected": null,
+    "text": "这次只考虑这一点，同时又要把所有相关问题都讨论完。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  },
+  {
+    "id": "N40",
+    "group": "constraints_and_ambiguity",
+    "split": "validation",
+    "expected": null,
+    "text": "只列结论还是解释过程，我还没想好。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    },
+    "input_cleared": true,
+    "timeout": false,
+    "finish_reason": "stop",
+    "reasoning_effort": "max",
+    "reasoning_mode": "manual",
+    "guidance_injected": false
+  }
+]

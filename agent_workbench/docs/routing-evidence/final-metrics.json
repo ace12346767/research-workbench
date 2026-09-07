@@ -1,0 +1,111 @@
+{
+  "thresholds": {
+    "min_score": 0.835,
+    "min_margin": 0.013
+  },
+  "combinations": 4539,
+  "baseline_calibration": {
+    "total": 80,
+    "categories": {
+      "miss": 41,
+      "correct_trigger": 7,
+      "correct_abstain": 32
+    },
+    "confusion_matrix": {
+      "fast": {
+        "abstain": 16
+      },
+      "standard": {
+        "abstain": 16
+      },
+      "deep": {
+        "abstain": 9,
+        "deep": 7
+      },
+      "abstain": {
+        "abstain": 32
+      }
+    },
+    "positive_count": 48,
+    "negative_count": 32,
+    "triggered": 7,
+    "positive_recall": 0.14583333333333334,
+    "trigger_precision": 1.0,
+    "false_trigger_rate": 0.0,
+    "coverage": 0.0875
+  },
+  "selected_calibration": {
+    "total": 80,
+    "categories": {
+      "correct_trigger": 25,
+      "miss": 23,
+      "correct_abstain": 32
+    },
+    "confusion_matrix": {
+      "fast": {
+        "fast": 7,
+        "abstain": 9
+      },
+      "standard": {
+        "abstain": 12,
+        "standard": 4
+      },
+      "deep": {
+        "deep": 14,
+        "abstain": 2
+      },
+      "abstain": {
+        "abstain": 32
+      }
+    },
+    "positive_count": 48,
+    "negative_count": 32,
+    "triggered": 25,
+    "positive_recall": 0.5208333333333334,
+    "trigger_precision": 1.0,
+    "false_trigger_rate": 0.0,
+    "coverage": 0.3125
+  },
+  "holdout": {
+    "total": 20,
+    "categories": {
+      "correct_trigger": 5,
+      "miss": 7,
+      "correct_abstain": 6,
+      "false_trigger": 2
+    },
+    "confusion_matrix": {
+      "fast": {
+        "fast": 1,
+        "abstain": 3
+      },
+      "standard": {
+        "abstain": 4
+      },
+      "deep": {
+        "deep": 4
+      },
+      "abstain": {
+        "abstain": 6,
+        "fast": 1,
+        "deep": 1
+      }
+    },
+    "positive_count": 12,
+    "negative_count": 8,
+    "triggered": 7,
+    "positive_recall": 0.4166666666666667,
+    "trigger_precision": 0.7142857142857143,
+    "false_trigger_rate": 0.25,
+    "coverage": 0.35
+  },
+  "protocol_acceptance": false,
+  "calibration_production_replay_matches": 80,
+  "ui_injection_and_manual_reasoning_checks": 20,
+  "configuration_and_implementation_unchanged": true,
+  "validation_used_once": true,
+  "selection_changed_after_validation": false,
+  "product_defaults_updated": false,
+  "installer_rebuilt": false,
+  "neighbor_sensitivity": "At score .835, reducing margin from .013 to .012 yields 2 false triggers in calibration."
+}

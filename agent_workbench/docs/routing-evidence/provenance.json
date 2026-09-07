@@ -1,0 +1,16 @@
+[
+  {
+    "output": "calibration-cases.json",
+    "source": "validation/restrained-v1/runs/selected-calibration-20260907/results.json",
+    "source_sha256": "d08cb04afc66c370e002bac4b9282a5eb0bd5b9b117bf628d1dbef1b0f2ae31d",
+    "records": 80,
+    "transformation": "Allowlisted projection; original labels and route scores preserved."
+  },
+  {
+    "output": "holdout-cases.json",
+    "source": "output/restrained-holdout-20260907/results.json",
+    "source_sha256": "0bbf68b18a980f8321a4955abddd8de3f3f093f3485ea149535ff17ee91b1ffd",
+    "records": 20,
+    "transformation": "Allowlisted projection; original labels and route scores preserved."
+  }
+]

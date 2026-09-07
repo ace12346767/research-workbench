@@ -1,0 +1,28 @@
+{
+  "frozen_at": "2026-09-07T11:46:23.143588+00:00",
+  "selected": {
+    "min_score": 0.835,
+    "min_margin": 0.013,
+    "correct_trigger": 25,
+    "correct_abstain": 32,
+    "false_trigger": 0,
+    "wrong_tier": 0,
+    "miss": 23,
+    "neighbor_worst_correct": 0
+  },
+  "grid_combinations": 4539,
+  "eligible_combinations": 3121,
+  "baseline": {
+    "min_score": 0.52,
+    "min_margin": 0.03,
+    "correct_trigger": 7,
+    "correct_abstain": 32,
+    "false_trigger": 0,
+    "wrong_tier": 0,
+    "miss": 41
+  },
+  "baseline_replay_matches": 80,
+  "protocol_sha256": "60c7ccc5bf026f1c4b6026cb9fa77d0d3f33db5012f7c31a7af756e2fdb98e95",
+  "score_evidence_sha256": "41b128aac53ffa9950d39e9a113e400bbf0e6df8a6433e31338d6b9a2f6c5801",
+  "validation_seen": false
+}

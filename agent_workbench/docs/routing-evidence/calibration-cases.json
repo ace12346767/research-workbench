@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "F01",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我只关心这一项是否符合要求，旁边那些问题先放一放。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.9055196551738458,
+      "margin": 0.017729282262951673,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F02",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "先把眼前这个疑问解决，其他可能性这次不讨论。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F03",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我需要确认的只有这一处，不打算把整件事重新梳理一遍。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.9112531479799996,
+      "margin": 0.019924841229185697,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F04",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "这一轮先到能作出判断为止，更远的事情以后再说。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F05",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "其他部分我已经清楚了，只剩这里需要你帮我确定。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.898297688610952,
+      "margin": 0.01534653473551395,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F06",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "暂时不需要整体建议，我想先拿到这一项的结果。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.9070512132159725,
+      "margin": 0.01674350482249143,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F07",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "只处理我标出的这处就好，周围的内容保持不动。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F08",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "先解决这个具体疑问，别顺着它延伸出一串新问题。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F11",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我现在要拿结果去用，来龙去脉暂时不必交代。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.8978906416528728,
+      "margin": 0.013965874726765248,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F12",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "把最能影响决定的那两点留给我，次要信息先省掉。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F13",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我想马上知道下一步做什么，暂时不用讲整套原理。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F14",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "背景我了解，只缺一个可以直接采用的处理办法。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F15",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "先把对我有用的答案摆出来，辅助说明等我追问再补。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F16",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我只带走最必要的几个要点，不需要完整铺开。",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.883028041511388,
+      "margin": 0.0169458936144129,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F18",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我不打算了解它的发展背景，能告诉我眼下采用什么就够了。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "F19",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "I need something I can use now, not the backstory or a tour of every possibility.",
+    "route": {
+      "effort": "fast",
+      "source": "semantic",
+      "score": 0.8398016149609795,
+      "margin": 0.018687455209112414,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S01",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "前面我能跟上，可到了这个结果就断了，中间那段联系是什么？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S02",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我看懂了每个部分，但还不知道它们是怎么接到一起的。",
+    "route": {
+      "effort": "standard",
+      "source": "semantic",
+      "score": 0.8969873094815745,
+      "margin": 0.016800894740162553,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S03",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "答案我看到了，但我还想弄明白为什么会得到它。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S04",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "这里为什么先做这一件，再做下一件？我没有理解这个顺序。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S05",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "别让关键的一步停在省略号里，我还需要靠它理解后面的内容。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S06",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我能记住这个做法，但不明白这样做到底起了什么作用。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S08",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我不是只想照抄答案，希望能跟上它是怎么一步步形成的。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S09",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "I can follow the starting point and the result, but I am missing the connection in between.",
+    "route": {
+      "effort": "standard",
+      "source": "semantic",
+      "score": 0.8484111648157476,
+      "margin": 0.02007800130678028,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S11",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我想照着完成这件事，需要知道从哪里开始，以及怎样判断自己做对了。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S12",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "给我一条能走到完成的路径，别停在一个方向性的建议上。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S13",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "做法和完成后的检查都交代一下，我要能自己复现出来。",
+    "route": {
+      "effort": "standard",
+      "source": "semantic",
+      "score": 0.9010017410152598,
+      "margin": 0.018125416977262554,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S14",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我需要知道先准备什么，接下来怎么处理，最后以什么为完成标志。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S15",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "不能只告诉我这样能行，也让我知道具体怎么落实。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S16",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我希望拿到的是能执行并核对的做法，而不是只知道大概方向。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S18",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "按这个办法做下去，怎样知道中间没有漏掉必要的那一步？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "S19",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "Give me a workable sequence and a way to check that I reached the intended result.",
+    "route": {
+      "effort": "standard",
+      "source": "semantic",
+      "score": 0.8464606031592242,
+      "margin": 0.02468817178755711,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D01",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "如果这个判断是对的，它暗中要求哪些条件必须同时成立？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.882787998100413,
+      "margin": 0.023016413244652756,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D02",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "有没有一种反过来的情况，会让现在的解释站不住脚？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.9023407066624042,
+      "margin": 0.016969906122355716,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D03",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "我们看到的是同一个结果，有没有另一种原因也能产生它？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8874156630275746,
+      "margin": 0.02112977560795548,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D04",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这一步是不是用了尚未证明的假设？如果拿掉它，后面的结论还剩多少？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.877905374015237,
+      "margin": 0.01702735288209023,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D05",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "什么样的新证据会让你改变目前的判断？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8916989650927709,
+      "margin": 0.03312212308565454,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D06",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "现有证据支持的是这个结论本身，还是仅仅与它不矛盾？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D07",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "把看似理所当然的条件去掉一个，原来的理由还能成立吗？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8920588336491084,
+      "margin": 0.024602988315767238,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D08",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这个理由能排除其他解释吗，还是我们只是暂时选中了其中一种？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D11",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "分开看都没问题，但这些变化一起出现时，会不会互相抵消或放大？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8903518046571923,
+      "margin": 0.0362224637546138,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D12",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "只改变一个条件时结果稳定，几个条件同时改变时还会这样吗？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8969535416105602,
+      "margin": 0.03641738547067419,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D13",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "有没有一个没被纳入讨论的环节，反而决定了整体是否成立？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.894425026051608,
+      "margin": 0.015596566192952355,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D14",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这里改善了一部分，会不会把问题转移到另一个部分？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8916452583083343,
+      "margin": 0.016861354870267853,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D15",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "边界条件发生变化后，哪些关系会先失效，又会影响到哪里？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8873169942034185,
+      "margin": 0.036885080094739675,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D16",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这些判断能分别成立，但放在同一套条件下会不会互相矛盾？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.9002824637156936,
+      "margin": 0.03214453468215972,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D18",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "如果顺序调换，或者其中一部分没有发生，整个推断还成立吗？",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.8917343801593466,
+      "margin": 0.03291604847225815,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "D19",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "Could two individually harmless changes interact and invalidate the overall result?",
+    "route": {
+      "effort": "deep",
+      "source": "semantic",
+      "score": 0.841422699348604,
+      "margin": 0.039592986546402975,
+      "reason": "semantic_match",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N01",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "晚上好。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N02",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "嗯，我知道了。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N03",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "这次麻烦你了，谢谢。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N04",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "我有点着急。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N05",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "这不对吧？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N06",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "请务必认真对待。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N08",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "先等一下，我再想想。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N09",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "Thanks, I have received it.",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N11",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "消融实验是什么意思？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N12",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "把标题中的英文字母改为大写。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N13",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "这个按钮叫什么名字？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N14",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "把这里的三行数字加起来。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N15",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "请把这些文件名按字母顺序排列。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N16",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "这篇论文是哪年发表的？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N18",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "这是关于并发、事务和容错的一份笔记。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N19",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "What year was this article published?",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N21",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "参考内容：\n这个结论依赖哪些没有说出来的前提？",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N22",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "```text\n有没有反例，或者同样说得通的其他解释？\n```",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N23",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "> 我现在只需要一个能用的答案。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N24",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "原文：\n让我知道该怎么做，以及做完后怎么确认。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N25",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "<document>这些因素一起变化时，会不会相互影响？</document>",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N26",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "作者说这个结论依赖哪些前提还不清楚。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N28",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "<!-- 换一种条件，原来的判断还成立吗？ -->",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N29",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "<quote>What unstated assumptions does this conclusion depend on?</quote>",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "empty_or_context_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N31",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "不调用工具。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "constraints_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N32",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "最多240字。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "constraints_only",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N33",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "用两段说明。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N34",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "只在这里展示，不要改动任何文件。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N35",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "回答用中文。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N36",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "我不想看到过程，但又希望你把中间每个环节都交代出来。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N38",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "从结果开始还是从过程开始，我现在都可以。",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "low_score_or_margin",
+      "router_state": "ready"
+    }
+  },
+  {
+    "id": "N39",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "Do not use any tools.",
+    "route": {
+      "effort": null,
+      "source": "abstain",
+      "score": null,
+      "margin": null,
+      "reason": "constraints_only",
+      "router_state": "ready"
+    }
+  }
+]

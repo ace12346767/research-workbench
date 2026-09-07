@@ -6,7 +6,7 @@ Date: 2026-09-07. Product: AgentWorkbench. Target: Windows x64 standard installe
 
 - Default semantic score/margin: 0.835 / 0.013, shared by the ranking function, constructor and production factory.
 - Existing examples, guidance prompts, rules and reasoning linkage are unchanged.
-- Interview-oriented Chinese README, 19 UI/native screenshots, source-only GitHub export and pinned ONNX download helper.
+- Chinese project documentation, 19 UI/native screenshots, source-only GitHub export and pinned ONNX download helper.
 - The installed application was not overwritten during this work.
 
 ## Installer

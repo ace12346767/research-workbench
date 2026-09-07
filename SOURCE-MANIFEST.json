@@ -72,8 +72,8 @@
     "sha256": "871fda959294cf43e4777761b0bcec6fed7842be972c8d44e162796e2e042a4b"
   },
   "agent_workbench/README.md": {
-    "bytes": 21223,
-    "sha256": "ee9c1ebc4ad5ee6f7baa9fd3aa6233a8a48d4350e57fadfd9fb944f3960acfea"
+    "bytes": 20338,
+    "sha256": "f58d8fd8c489346e455ec32064339192e5ace7c8855c73f97f59802fe1b10eb5"
   },
   "agent_workbench/requirements.txt": {
     "bytes": 337,
@@ -272,12 +272,44 @@
     "sha256": "ab22034bab0776352ae5b032c72d96eb8ae0e0bd691097a99d1ec526ade8985f"
   },
   "agent_workbench/docs/RELEASE-0.4.13.md": {
-    "bytes": 4077,
-    "sha256": "207a15afc70dda49c08aec8440b185abda4f98a9dd1ca8ee26b5fc1d512a600f"
+    "bytes": 4073,
+    "sha256": "7f75beae4324f05406ef1b3a04287f6ea66e78b91d6cefca139ccedcdf601466"
   },
   "agent_workbench/docs/RELEASE-PLAN.md": {
     "bytes": 1360,
     "sha256": "f351929ca38766c6bf11125b9ddb96eba700e2a8deca76ed5a1ea1830b0583fc"
+  },
+  "agent_workbench/docs/ROUTING-VALIDATION.md": {
+    "bytes": 6036,
+    "sha256": "6ecbaf6bb3c2b685d4233e68ea0c470d31c6bb76fc268a82a66cfc73a55d8817"
+  },
+  "agent_workbench/docs/routing-evidence/calibration-cases.json": {
+    "bytes": 30681,
+    "sha256": "c471f8ad7284fdd4c6a4af5d238c68ebc33ad94c6fa627f5929e4d66d395122b"
+  },
+  "agent_workbench/docs/routing-evidence/final-metrics.json": {
+    "bytes": 2540,
+    "sha256": "dfbd759f6ca9a5b9e6f51b5b63120c8391f645d2e64b25a5126b7076ee96358e"
+  },
+  "agent_workbench/docs/routing-evidence/grid.csv": {
+    "bytes": 121666,
+    "sha256": "47819bf6651aea21851756257218b69e6e22687ed9cb043e1c6767b73f36ded8"
+  },
+  "agent_workbench/docs/routing-evidence/holdout-cases.json": {
+    "bytes": 11220,
+    "sha256": "3c57e0c81a6436c1c105da6723ccab7189d77cb8cfcda2ebc673890b16080548"
+  },
+  "agent_workbench/docs/routing-evidence/PROTOCOL.md": {
+    "bytes": 2241,
+    "sha256": "60c7ccc5bf026f1c4b6026cb9fa77d0d3f33db5012f7c31a7af756e2fdb98e95"
+  },
+  "agent_workbench/docs/routing-evidence/provenance.json": {
+    "bytes": 652,
+    "sha256": "16efe2d5231c7881cdfd9665d79c571ba6c2127cc6f7fea79d33ea98e1cf5855"
+  },
+  "agent_workbench/docs/routing-evidence/selection.json": {
+    "bytes": 785,
+    "sha256": "b2f6dbecbaa3a2a50b46d9fbbb4362dfad9d736b8a190864aa157c559b530e40"
   },
   "agent_workbench/docs/screenshots/01-welcome.png": {
     "bytes": 46588,
@@ -736,8 +768,8 @@
     "sha256": "bfe770c0063e4a0a36e395e428652b79e9f1a95dfe330388983cceb26639a719"
   },
   "README.md": {
-    "bytes": 21831,
-    "sha256": "6c4ee2fe973372cc809bd81fa39cec6c1de78859a3253c54385815dbd5fff724"
+    "bytes": 20962,
+    "sha256": "89ee009c6918c5271b1942a4328b83b64f80a496e5183f600143b43842f68882"
   },
   "LICENSE": {
     "bytes": 1084,
