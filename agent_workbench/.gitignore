@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.tmp/
+build/
+dist/
+output/
+runtime-data*/
+node_modules/
+.env
+.env.*
+!.env.example
+assets/models/**/*.onnx
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm

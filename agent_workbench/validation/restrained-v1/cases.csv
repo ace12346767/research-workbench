@@ -1,0 +1,107 @@
+﻿id,group,split,expected,text,basis
+F01,focus_one_point,calibration,fast,我只关心这一项是否符合要求，旁边那些问题先放一放。,限定一个判断，不扩展范围
+F02,focus_one_point,calibration,fast,先把眼前这个疑问解决，其他可能性这次不讨论。,收敛当前疑问
+F03,focus_one_point,calibration,fast,我需要确认的只有这一处，不打算把整件事重新梳理一遍。,只确认局部
+F04,focus_one_point,calibration,fast,这一轮先到能作出判断为止，更远的事情以后再说。,明确停止于当前判断
+F05,focus_one_point,calibration,fast,其他部分我已经清楚了，只剩这里需要你帮我确定。,其余范围已有信息，仅处理剩余一点
+F06,focus_one_point,calibration,fast,暂时不需要整体建议，我想先拿到这一项的结果。,排除整体建议
+F07,focus_one_point,calibration,fast,只处理我标出的这处就好，周围的内容保持不动。,明确局部处理范围
+F08,focus_one_point,calibration,fast,先解决这个具体疑问，别顺着它延伸出一串新问题。,避免任务扩展
+F09,focus_one_point,validation,fast,My only concern right now is this one decision; the wider discussion can wait.,英文局部收敛
+F10,focus_one_point,validation,fast,这次的终点就是确认这一处，确认完我们就先停在这里。,明确任务停止点
+F11,essential_result,calibration,fast,我现在要拿结果去用，来龙去脉暂时不必交代。,可用结果优先，排除背景
+F12,essential_result,calibration,fast,把最能影响决定的那两点留给我，次要信息先省掉。,筛选必要信息而非拓宽覆盖
+F13,essential_result,calibration,fast,我想马上知道下一步做什么，暂时不用讲整套原理。,当前可执行结果优先
+F14,essential_result,calibration,fast,背景我了解，只缺一个可以直接采用的处理办法。,已有背景，仅需可用办法
+F15,essential_result,calibration,fast,先把对我有用的答案摆出来，辅助说明等我追问再补。,结果优先，解释后置
+F16,essential_result,calibration,fast,我只带走最必要的几个要点，不需要完整铺开。,必要要点收敛
+F17,essential_result,validation,fast,有用的结果和不能忽略的提醒留下，其余介绍可以先拿掉。,保留必要核对但排除扩展
+F18,essential_result,calibration,fast,我不打算了解它的发展背景，能告诉我眼下采用什么就够了。,限定即时使用目的
+F19,essential_result,calibration,fast,"I need something I can use now, not the backstory or a tour of every possibility.",英文结果优先
+F20,essential_result,validation,fast,保留能让我行动的内容就行，暂时别把讨论范围越拉越大。,行动所需内容与范围限制
+S01,understand_connections,calibration,standard,前面我能跟上，可到了这个结果就断了，中间那段联系是什么？,需要理解推导中的连接
+S02,understand_connections,calibration,standard,我看懂了每个部分，但还不知道它们是怎么接到一起的。,需要解释部分之间的联系
+S03,understand_connections,calibration,standard,答案我看到了，但我还想弄明白为什么会得到它。,结果之外需要依据
+S04,understand_connections,calibration,standard,这里为什么先做这一件，再做下一件？我没有理解这个顺序。,理解主要过程的顺序
+S05,understand_connections,calibration,standard,别让关键的一步停在省略号里，我还需要靠它理解后面的内容。,补足理解所需环节
+S06,understand_connections,calibration,standard,我能记住这个做法，但不明白这样做到底起了什么作用。,理解做法与作用
+S07,understand_connections,validation,standard,这两个说法看起来很像，它们的区别在哪里，为什么要分开？,常规概念区别与依据
+S08,understand_connections,calibration,standard,我不是只想照抄答案，希望能跟上它是怎么一步步形成的。,理解形成过程
+S09,understand_connections,calibration,standard,"I can follow the starting point and the result, but I am missing the connection in between.",英文连接解释
+S10,understand_connections,validation,standard,把这里缺掉的来由补给我，否则我只能记住结果而不能理解它。,补足结果依据
+S11,complete_and_check,calibration,standard,我想照着完成这件事，需要知道从哪里开始，以及怎样判断自己做对了。,完成过程与基本确认
+S12,complete_and_check,calibration,standard,给我一条能走到完成的路径，别停在一个方向性的建议上。,需要可完成流程
+S13,complete_and_check,calibration,standard,做法和完成后的检查都交代一下，我要能自己复现出来。,复现与结果确认
+S14,complete_and_check,calibration,standard,我需要知道先准备什么，接下来怎么处理，最后以什么为完成标志。,普通实施流程与完成条件
+S15,complete_and_check,calibration,standard,不能只告诉我这样能行，也让我知道具体怎么落实。,从结论到实际完成
+S16,complete_and_check,calibration,standard,我希望拿到的是能执行并核对的做法，而不是只知道大概方向。,执行和基本核对
+S17,complete_and_check,validation,standard,关键环节帮我串起来，做完后我应该看到什么变化？,串联过程与可见结果
+S18,complete_and_check,calibration,standard,按这个办法做下去，怎样知道中间没有漏掉必要的那一步？,日常过程完整性确认
+S19,complete_and_check,calibration,standard,Give me a workable sequence and a way to check that I reached the intended result.,英文流程与基本验证
+S20,complete_and_check,validation,standard,我希望自己能够把它做完，并且知道结果为什么算是达标。,完成任务和理解验收条件
+D01,assumptions_counterexamples,calibration,deep,如果这个判断是对的，它暗中要求哪些条件必须同时成立？,检查隐含前提
+D02,assumptions_counterexamples,calibration,deep,有没有一种反过来的情况，会让现在的解释站不住脚？,构造反例
+D03,assumptions_counterexamples,calibration,deep,我们看到的是同一个结果，有没有另一种原因也能产生它？,竞争解释
+D04,assumptions_counterexamples,calibration,deep,这一步是不是用了尚未证明的假设？如果拿掉它，后面的结论还剩多少？,假设依赖与撤销后果
+D05,assumptions_counterexamples,calibration,deep,什么样的新证据会让你改变目前的判断？,可证伪性
+D06,assumptions_counterexamples,calibration,deep,现有证据支持的是这个结论本身，还是仅仅与它不矛盾？,证据强度与结论边界
+D07,assumptions_counterexamples,calibration,deep,把看似理所当然的条件去掉一个，原来的理由还能成立吗？,改变前提检验结论
+D08,assumptions_counterexamples,calibration,deep,这个理由能排除其他解释吗，还是我们只是暂时选中了其中一种？,排除竞争解释
+D09,assumptions_counterexamples,validation,deep,"What would have to be true for that conclusion to hold, and what evidence could overturn it?",英文前提与证伪
+D10,assumptions_counterexamples,validation,deep,有没有一个不违反已知条件的反例，能推翻这条推断？,约束下反例检验
+D11,interactions_boundaries,calibration,deep,分开看都没问题，但这些变化一起出现时，会不会互相抵消或放大？,多因素相互影响
+D12,interactions_boundaries,calibration,deep,只改变一个条件时结果稳定，几个条件同时改变时还会这样吗？,联合变化后的稳定性
+D13,interactions_boundaries,calibration,deep,有没有一个没被纳入讨论的环节，反而决定了整体是否成立？,遗漏环节对整体的影响
+D14,interactions_boundaries,calibration,deep,这里改善了一部分，会不会把问题转移到另一个部分？,局部改善的跨部分代价
+D15,interactions_boundaries,calibration,deep,边界条件发生变化后，哪些关系会先失效，又会影响到哪里？,边界与连锁影响
+D16,interactions_boundaries,calibration,deep,这些判断能分别成立，但放在同一套条件下会不会互相矛盾？,跨判断一致性
+D17,interactions_boundaries,validation,deep,眼前结果看起来符合预期，有没有延迟出现的影响会把它反转？,时序后果与结论边界
+D18,interactions_boundaries,calibration,deep,如果顺序调换，或者其中一部分没有发生，整个推断还成立吗？,顺序和缺失条件下的推断
+D19,interactions_boundaries,calibration,deep,Could two individually harmless changes interact and invalidate the overall result?,英文相互影响
+D20,interactions_boundaries,validation,deep,当前的取舍在别的约束下会不会反过来，什么条件会使原来的优势变成代价？,条件变化下的权衡反转
+N01,neutral_tone,calibration,abstain,晚上好。,问候不表达处理偏好
+N02,neutral_tone,calibration,abstain,嗯，我知道了。,确认收悉
+N03,neutral_tone,calibration,abstain,这次麻烦你了，谢谢。,礼貌不决定档位
+N04,neutral_tone,calibration,abstain,我有点着急。,单独急迫语气不决定深度
+N05,neutral_tone,calibration,abstain,这不对吧？,仅有质疑语气，缺少可判别要求
+N06,neutral_tone,calibration,abstain,请务必认真对待。,郑重语气不等于深入
+N07,neutral_tone,validation,abstain,继续吧。,依赖缺失上下文，不猜测偏好
+N08,neutral_tone,calibration,abstain,先等一下，我再想想。,暂停表达，无引导需求
+N09,neutral_tone,calibration,abstain,"Thanks, I have received it.",英文确认收悉
+N10,neutral_tone,validation,abstain,这个我还没决定。,陈述状态，不推断任务档位
+N11,topic_without_preference,calibration,abstain,消融实验是什么意思？,出现专业对象不等于审查证据；无明显处理偏好
+N12,topic_without_preference,calibration,abstain,把标题中的英文字母改为大写。,局部任务不应自动被映射为快速档
+N13,topic_without_preference,calibration,abstain,这个按钮叫什么名字？,普通询问，不强行补充引导
+N14,topic_without_preference,calibration,abstain,把这里的三行数字加起来。,计算任务本身不表达引导偏好
+N15,topic_without_preference,calibration,abstain,请把这些文件名按字母顺序排列。,排序对象不决定档位
+N16,topic_without_preference,calibration,abstain,这篇论文是哪年发表的？,论文主题不自动触发深入
+N17,topic_without_preference,validation,abstain,我想了解分布式系统。,主题看似复杂，但范围和偏好不明确
+N18,topic_without_preference,calibration,abstain,这是关于并发、事务和容错的一份笔记。,专业词列表只是材料介绍
+N19,topic_without_preference,calibration,abstain,What year was this article published?,英文事实查询不强配档位
+N20,topic_without_preference,validation,abstain,把表头里的空格替换成下划线。,格式转换不自动要求快速引导
+N21,quoted_reference,calibration,abstain,"参考内容：
+这个结论依赖哪些没有说出来的前提？",仅参考内容，不把锚点当作用户要求
+N22,quoted_reference,calibration,abstain,"```text
+有没有反例，或者同样说得通的其他解释？
+```",代码围栏中的锚点不是当前要求
+N23,quoted_reference,calibration,abstain,> 我现在只需要一个能用的答案。,引用行不触发
+N24,quoted_reference,calibration,abstain,"原文：
+让我知道该怎么做，以及做完后怎么确认。",原文材料不触发
+N25,quoted_reference,calibration,abstain,<document>这些因素一起变化时，会不会相互影响？</document>,文档内容不触发
+N26,quoted_reference,calibration,abstain,作者说这个结论依赖哪些前提还不清楚。,转述不等于用户提出审查要求
+N27,quoted_reference,validation,abstain,“把主要过程交代清楚，别跳过关键环节。”,独立引语不作为命令
+N28,quoted_reference,calibration,abstain,<!-- 换一种条件，原来的判断还成立吗？ -->,注释内容不触发
+N29,quoted_reference,calibration,abstain,<quote>What unstated assumptions does this conclusion depend on?</quote>,英文引用区锚点不触发
+N30,quoted_reference,validation,abstain,"~~~text
+先告诉我最关键的结果，背景可以省略。
+~~~",另一种围栏内的锚点不触发
+N31,constraints_and_ambiguity,calibration,abstain,不调用工具。,仅权限约束，不决定回答深度
+N32,constraints_and_ambiguity,calibration,abstain,最多240字。,仅长度约束，不独立触发
+N33,constraints_and_ambiguity,calibration,abstain,用两段说明。,仅格式要求，没有任务内容
+N34,constraints_and_ambiguity,calibration,abstain,只在这里展示，不要改动任何文件。,操作限制不是快速倾向
+N35,constraints_and_ambiguity,calibration,abstain,回答用中文。,语言要求不决定档位
+N36,constraints_and_ambiguity,calibration,abstain,我不想看到过程，但又希望你把中间每个环节都交代出来。,相互矛盾的表达，不强选档位
+N37,constraints_and_ambiguity,validation,abstain,这次只考虑这一点，同时又要把所有相关问题都讨论完。,范围要求矛盾，不默认最广
+N38,constraints_and_ambiguity,calibration,abstain,从结果开始还是从过程开始，我现在都可以。,没有稳定的倾向
+N39,constraints_and_ambiguity,calibration,abstain,Do not use any tools.,英文纯工具约束
+N40,constraints_and_ambiguity,validation,abstain,只列结论还是解释过程，我还没想好。,尚未选定偏好，不应由出现的词强行决定

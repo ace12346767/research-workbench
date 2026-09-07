@@ -1,0 +1,25 @@
+{
+  "screenshots": [
+    "01-welcome",
+    "02-chat-workspace",
+    "03-file-preview",
+    "04-context",
+    "05-write-approval",
+    "06-knowledge-card",
+    "07-card-draft",
+    "08-knowledge-library",
+    "09-paper-tree",
+    "10-paper-list",
+    "11-paper-detail",
+    "12-paper-reader",
+    "13-settings",
+    "14-routing-settings",
+    "15-route-details",
+    "16-attachments",
+    "17-model-picker"
+  ],
+  "rendererErrors": [],
+  "method": "native WebView2; synthetic fixture PDFs and offline response; not model-quality evidence",
+  "treeOrbitChangesPixels": true,
+  "pdfPageLoaded": true
+}

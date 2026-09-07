@@ -1,0 +1,11 @@
+{
+  "name": "agent-workbench-dev",
+  "private": true,
+  "scripts": {
+    "test:web": "node --test tests/web/markdown.test.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "three": "^0.180.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "corpus_version": "restrained-v1",
+  "app_version": "0.4.12",
+  "prepared_at": "2026-09-07T10:27:39.086365+00:00",
+  "status": "prepared_not_run",
+  "cases": 100,
+  "splits": {
+    "calibration": 80,
+    "validation": 20
+  },
+  "baseline_thresholds": {
+    "min_score": 0.52,
+    "min_margin": 0.03
+  },
+  "allowed_tuning": [
+    "min_score",
+    "min_margin"
+  ],
+  "top_k": 3,
+  "frozen_files": {
+    "cases.json": "ee3b0b153ffa0df2e13aea0d6364fff9ec127e3fa79d64c7eb1e2fd2d2fff2a8",
+    "guidance.frozen.json": "4593a07a96e55cd50e939fff61107f45b59f0893bc54278c70bfd5daa7f69981",
+    "calibration.json": "942e0915ee46f57dc7b0215dd82c6ec79332bcf661ed901fab12471842f0d079",
+    "validation.json": "bfe770c0063e4a0a36e395e428652b79e9f1a95dfe330388983cceb26639a719"
+  },
+  "implementation_hashes": {
+    "agent_workbench/router/settings.py": "0173a249bc268fc535d31a6f6bcbd3505b3e7875801331f152f76fc192fb8be3",
+    "agent_workbench/router/effort_router.py": "7cdde7b32cb1724d364fdf1211b1d41eca7bdc6dc8f3a68f5a01aaaa7f168b9d",
+    "agent_workbench/router/request_text.py": "d961eb96b3814caf37437393a9ce90c798b771dc21e719afda315ca8c358ae3c",
+    "agent_workbench/router/intent.py": "6cccd5f5ee87fdd73b1ada048d70b7c4c215783c699767b6ba31b2f36ddc1f5e",
+    "agent_workbench/router/semantic_router.py": "6656f6f537ec66b7c2356888ac0f4f7288743337a069f0b7f32816f2387b0f9b",
+    "agent_workbench/router/embedder.py": "272f9c80afcab6dfcb6ca6ac1b825c88139078170a4e8232a2f507e918bbd15f",
+    "agent_workbench/assets/models/multilingual-e5-small/config.json": "cb99455288675345e1a4f411438d5d0adbba5fbd3a67ea4fb03c015433b996c1",
+    "agent_workbench/assets/models/multilingual-e5-small/tokenizer.json": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+    "agent_workbench/assets/models/multilingual-e5-small/onnx/model_quantized.onnx": "f80102d3f2a1229f387d3c81909990d8945513e347b0eab049f7de3c6f98c193"
+  },
+  "labels": "Human-authored product preference expectations, not objective task complexity labels.",
+  "holdout": "Prepared by the same author; reserved from tuning, not blind independent external validation.",
+  "threshold_limits": "Global thresholds cannot repair parsing, exclusions, explicit rules, or incorrectly ranked semantics."
+}

@@ -1,0 +1,40 @@
+{
+  "enabled": true,
+  "link_reasoning": false,
+  "profiles": {
+    "fast": {
+      "examples": [
+        "我只想确认这一点，其他的先不讨论。",
+        "先告诉我最关键的结果，背景可以省略。",
+        "我现在只需要一个能用的答案。",
+        "抓住最必要的几项就够了，不用面面俱到。",
+        "I only need to settle this one point; leave the rest aside.",
+        "Start with the essential result; I do not need the background."
+      ],
+      "prompt": "Handle this efficiently. Focus on the requested result, with only the explanation and checks needed to make it usable and reliable. Do not expand the task or add unrelated checks. Follow the user's explicit requirements for scope, format, and length."
+    },
+    "standard": {
+      "examples": [
+        "我没理解中间是怎么联系起来的。",
+        "让我知道该怎么做，以及做完后怎么确认。",
+        "把主要过程交代清楚，别跳过关键环节。",
+        "除了结果，也说清楚为什么这么做。",
+        "I do not understand how the intermediate parts connect.",
+        "Help me understand what to do and how to tell whether it worked."
+      ],
+      "prompt": "Explain the relevant connections or steps and the basis for the result. Include a proportionate check or example only where it helps complete the request. Do not expand the task or add unrelated checks. Follow the user's explicit requirements for scope, format, and length."
+    },
+    "deep": {
+      "examples": [
+        "这个结论依赖哪些没有说出来的前提？",
+        "有没有反例，或者同样说得通的其他解释？",
+        "这些因素一起变化时，会不会相互影响？",
+        "换一种条件，原来的判断还成立吗？",
+        "有没有遗漏的环节，会让整体结果发生变化？",
+        "What unstated assumptions does this conclusion depend on?",
+        "Could a counterexample or another explanation change the conclusion?"
+      ],
+      "prompt": "Check the assumptions, counterexamples, or interactions relevant to the user's question. Distinguish supported conclusions from uncertainty, and explain only the consequences that matter to the request. Do not expand the task or add unrelated checks. Follow the user's explicit requirements for scope, format, and length."
+    }
+  }
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "F09",
+    "group": "focus_one_point",
+    "split": "validation",
+    "expected": "fast",
+    "text": "My only concern right now is this one decision; the wider discussion can wait.",
+    "basis": "英文局部收敛"
+  },
+  {
+    "id": "F10",
+    "group": "focus_one_point",
+    "split": "validation",
+    "expected": "fast",
+    "text": "这次的终点就是确认这一处，确认完我们就先停在这里。",
+    "basis": "明确任务停止点"
+  },
+  {
+    "id": "F17",
+    "group": "essential_result",
+    "split": "validation",
+    "expected": "fast",
+    "text": "有用的结果和不能忽略的提醒留下，其余介绍可以先拿掉。",
+    "basis": "保留必要核对但排除扩展"
+  },
+  {
+    "id": "F20",
+    "group": "essential_result",
+    "split": "validation",
+    "expected": "fast",
+    "text": "保留能让我行动的内容就行，暂时别把讨论范围越拉越大。",
+    "basis": "行动所需内容与范围限制"
+  },
+  {
+    "id": "S07",
+    "group": "understand_connections",
+    "split": "validation",
+    "expected": "standard",
+    "text": "这两个说法看起来很像，它们的区别在哪里，为什么要分开？",
+    "basis": "常规概念区别与依据"
+  },
+  {
+    "id": "S10",
+    "group": "understand_connections",
+    "split": "validation",
+    "expected": "standard",
+    "text": "把这里缺掉的来由补给我，否则我只能记住结果而不能理解它。",
+    "basis": "补足结果依据"
+  },
+  {
+    "id": "S17",
+    "group": "complete_and_check",
+    "split": "validation",
+    "expected": "standard",
+    "text": "关键环节帮我串起来，做完后我应该看到什么变化？",
+    "basis": "串联过程与可见结果"
+  },
+  {
+    "id": "S20",
+    "group": "complete_and_check",
+    "split": "validation",
+    "expected": "standard",
+    "text": "我希望自己能够把它做完，并且知道结果为什么算是达标。",
+    "basis": "完成任务和理解验收条件"
+  },
+  {
+    "id": "D09",
+    "group": "assumptions_counterexamples",
+    "split": "validation",
+    "expected": "deep",
+    "text": "What would have to be true for that conclusion to hold, and what evidence could overturn it?",
+    "basis": "英文前提与证伪"
+  },
+  {
+    "id": "D10",
+    "group": "assumptions_counterexamples",
+    "split": "validation",
+    "expected": "deep",
+    "text": "有没有一个不违反已知条件的反例，能推翻这条推断？",
+    "basis": "约束下反例检验"
+  },
+  {
+    "id": "D17",
+    "group": "interactions_boundaries",
+    "split": "validation",
+    "expected": "deep",
+    "text": "眼前结果看起来符合预期，有没有延迟出现的影响会把它反转？",
+    "basis": "时序后果与结论边界"
+  },
+  {
+    "id": "D20",
+    "group": "interactions_boundaries",
+    "split": "validation",
+    "expected": "deep",
+    "text": "当前的取舍在别的约束下会不会反过来，什么条件会使原来的优势变成代价？",
+    "basis": "条件变化下的权衡反转"
+  },
+  {
+    "id": "N07",
+    "group": "neutral_tone",
+    "split": "validation",
+    "expected": null,
+    "text": "继续吧。",
+    "basis": "依赖缺失上下文，不猜测偏好"
+  },
+  {
+    "id": "N10",
+    "group": "neutral_tone",
+    "split": "validation",
+    "expected": null,
+    "text": "这个我还没决定。",
+    "basis": "陈述状态，不推断任务档位"
+  },
+  {
+    "id": "N17",
+    "group": "topic_without_preference",
+    "split": "validation",
+    "expected": null,
+    "text": "我想了解分布式系统。",
+    "basis": "主题看似复杂，但范围和偏好不明确"
+  },
+  {
+    "id": "N20",
+    "group": "topic_without_preference",
+    "split": "validation",
+    "expected": null,
+    "text": "把表头里的空格替换成下划线。",
+    "basis": "格式转换不自动要求快速引导"
+  },
+  {
+    "id": "N27",
+    "group": "quoted_reference",
+    "split": "validation",
+    "expected": null,
+    "text": "“把主要过程交代清楚，别跳过关键环节。”",
+    "basis": "独立引语不作为命令"
+  },
+  {
+    "id": "N30",
+    "group": "quoted_reference",
+    "split": "validation",
+    "expected": null,
+    "text": "~~~text\n先告诉我最关键的结果，背景可以省略。\n~~~",
+    "basis": "另一种围栏内的锚点不触发"
+  },
+  {
+    "id": "N37",
+    "group": "constraints_and_ambiguity",
+    "split": "validation",
+    "expected": null,
+    "text": "这次只考虑这一点，同时又要把所有相关问题都讨论完。",
+    "basis": "范围要求矛盾，不默认最广"
+  },
+  {
+    "id": "N40",
+    "group": "constraints_and_ambiguity",
+    "split": "validation",
+    "expected": null,
+    "text": "只列结论还是解释过程，我还没想好。",
+    "basis": "尚未选定偏好，不应由出现的词强行决定"
+  }
+]

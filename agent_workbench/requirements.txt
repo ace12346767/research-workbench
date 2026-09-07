@@ -1,0 +1,20 @@
+fastapi==0.141.1
+httpx==0.28.1
+keyring>=25.6,<26
+numpy==1.26.4
+onnxruntime>=1.20,<2
+protobuf>=4.25.8,<5
+pydantic==2.13.4
+pymupdf>=1.26,<2
+pywebview>=5.4,<6
+tokenizers>=0.21,<1
+uvicorn==0.52.1
+python-docx==1.2.0
+openpyxl==3.1.5
+xlrd==2.0.2
+pillow==12.3.0
+defusedxml==0.7.1
+
+# Development and packaging
+pyinstaller>=6.10,<7
+pytest>=8.4,<9

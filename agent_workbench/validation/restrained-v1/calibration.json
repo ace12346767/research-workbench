@@ -1,0 +1,642 @@
+[
+  {
+    "id": "F01",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我只关心这一项是否符合要求，旁边那些问题先放一放。",
+    "basis": "限定一个判断，不扩展范围"
+  },
+  {
+    "id": "F02",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "先把眼前这个疑问解决，其他可能性这次不讨论。",
+    "basis": "收敛当前疑问"
+  },
+  {
+    "id": "F03",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我需要确认的只有这一处，不打算把整件事重新梳理一遍。",
+    "basis": "只确认局部"
+  },
+  {
+    "id": "F04",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "这一轮先到能作出判断为止，更远的事情以后再说。",
+    "basis": "明确停止于当前判断"
+  },
+  {
+    "id": "F05",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "其他部分我已经清楚了，只剩这里需要你帮我确定。",
+    "basis": "其余范围已有信息，仅处理剩余一点"
+  },
+  {
+    "id": "F06",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "暂时不需要整体建议，我想先拿到这一项的结果。",
+    "basis": "排除整体建议"
+  },
+  {
+    "id": "F07",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "只处理我标出的这处就好，周围的内容保持不动。",
+    "basis": "明确局部处理范围"
+  },
+  {
+    "id": "F08",
+    "group": "focus_one_point",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "先解决这个具体疑问，别顺着它延伸出一串新问题。",
+    "basis": "避免任务扩展"
+  },
+  {
+    "id": "F11",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我现在要拿结果去用，来龙去脉暂时不必交代。",
+    "basis": "可用结果优先，排除背景"
+  },
+  {
+    "id": "F12",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "把最能影响决定的那两点留给我，次要信息先省掉。",
+    "basis": "筛选必要信息而非拓宽覆盖"
+  },
+  {
+    "id": "F13",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我想马上知道下一步做什么，暂时不用讲整套原理。",
+    "basis": "当前可执行结果优先"
+  },
+  {
+    "id": "F14",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "背景我了解，只缺一个可以直接采用的处理办法。",
+    "basis": "已有背景，仅需可用办法"
+  },
+  {
+    "id": "F15",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "先把对我有用的答案摆出来，辅助说明等我追问再补。",
+    "basis": "结果优先，解释后置"
+  },
+  {
+    "id": "F16",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我只带走最必要的几个要点，不需要完整铺开。",
+    "basis": "必要要点收敛"
+  },
+  {
+    "id": "F18",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "我不打算了解它的发展背景，能告诉我眼下采用什么就够了。",
+    "basis": "限定即时使用目的"
+  },
+  {
+    "id": "F19",
+    "group": "essential_result",
+    "split": "calibration",
+    "expected": "fast",
+    "text": "I need something I can use now, not the backstory or a tour of every possibility.",
+    "basis": "英文结果优先"
+  },
+  {
+    "id": "S01",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "前面我能跟上，可到了这个结果就断了，中间那段联系是什么？",
+    "basis": "需要理解推导中的连接"
+  },
+  {
+    "id": "S02",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我看懂了每个部分，但还不知道它们是怎么接到一起的。",
+    "basis": "需要解释部分之间的联系"
+  },
+  {
+    "id": "S03",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "答案我看到了，但我还想弄明白为什么会得到它。",
+    "basis": "结果之外需要依据"
+  },
+  {
+    "id": "S04",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "这里为什么先做这一件，再做下一件？我没有理解这个顺序。",
+    "basis": "理解主要过程的顺序"
+  },
+  {
+    "id": "S05",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "别让关键的一步停在省略号里，我还需要靠它理解后面的内容。",
+    "basis": "补足理解所需环节"
+  },
+  {
+    "id": "S06",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我能记住这个做法，但不明白这样做到底起了什么作用。",
+    "basis": "理解做法与作用"
+  },
+  {
+    "id": "S08",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我不是只想照抄答案，希望能跟上它是怎么一步步形成的。",
+    "basis": "理解形成过程"
+  },
+  {
+    "id": "S09",
+    "group": "understand_connections",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "I can follow the starting point and the result, but I am missing the connection in between.",
+    "basis": "英文连接解释"
+  },
+  {
+    "id": "S11",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我想照着完成这件事，需要知道从哪里开始，以及怎样判断自己做对了。",
+    "basis": "完成过程与基本确认"
+  },
+  {
+    "id": "S12",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "给我一条能走到完成的路径，别停在一个方向性的建议上。",
+    "basis": "需要可完成流程"
+  },
+  {
+    "id": "S13",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "做法和完成后的检查都交代一下，我要能自己复现出来。",
+    "basis": "复现与结果确认"
+  },
+  {
+    "id": "S14",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我需要知道先准备什么，接下来怎么处理，最后以什么为完成标志。",
+    "basis": "普通实施流程与完成条件"
+  },
+  {
+    "id": "S15",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "不能只告诉我这样能行，也让我知道具体怎么落实。",
+    "basis": "从结论到实际完成"
+  },
+  {
+    "id": "S16",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "我希望拿到的是能执行并核对的做法，而不是只知道大概方向。",
+    "basis": "执行和基本核对"
+  },
+  {
+    "id": "S18",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "按这个办法做下去，怎样知道中间没有漏掉必要的那一步？",
+    "basis": "日常过程完整性确认"
+  },
+  {
+    "id": "S19",
+    "group": "complete_and_check",
+    "split": "calibration",
+    "expected": "standard",
+    "text": "Give me a workable sequence and a way to check that I reached the intended result.",
+    "basis": "英文流程与基本验证"
+  },
+  {
+    "id": "D01",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "如果这个判断是对的，它暗中要求哪些条件必须同时成立？",
+    "basis": "检查隐含前提"
+  },
+  {
+    "id": "D02",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "有没有一种反过来的情况，会让现在的解释站不住脚？",
+    "basis": "构造反例"
+  },
+  {
+    "id": "D03",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "我们看到的是同一个结果，有没有另一种原因也能产生它？",
+    "basis": "竞争解释"
+  },
+  {
+    "id": "D04",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这一步是不是用了尚未证明的假设？如果拿掉它，后面的结论还剩多少？",
+    "basis": "假设依赖与撤销后果"
+  },
+  {
+    "id": "D05",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "什么样的新证据会让你改变目前的判断？",
+    "basis": "可证伪性"
+  },
+  {
+    "id": "D06",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "现有证据支持的是这个结论本身，还是仅仅与它不矛盾？",
+    "basis": "证据强度与结论边界"
+  },
+  {
+    "id": "D07",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "把看似理所当然的条件去掉一个，原来的理由还能成立吗？",
+    "basis": "改变前提检验结论"
+  },
+  {
+    "id": "D08",
+    "group": "assumptions_counterexamples",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这个理由能排除其他解释吗，还是我们只是暂时选中了其中一种？",
+    "basis": "排除竞争解释"
+  },
+  {
+    "id": "D11",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "分开看都没问题，但这些变化一起出现时，会不会互相抵消或放大？",
+    "basis": "多因素相互影响"
+  },
+  {
+    "id": "D12",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "只改变一个条件时结果稳定，几个条件同时改变时还会这样吗？",
+    "basis": "联合变化后的稳定性"
+  },
+  {
+    "id": "D13",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "有没有一个没被纳入讨论的环节，反而决定了整体是否成立？",
+    "basis": "遗漏环节对整体的影响"
+  },
+  {
+    "id": "D14",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这里改善了一部分，会不会把问题转移到另一个部分？",
+    "basis": "局部改善的跨部分代价"
+  },
+  {
+    "id": "D15",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "边界条件发生变化后，哪些关系会先失效，又会影响到哪里？",
+    "basis": "边界与连锁影响"
+  },
+  {
+    "id": "D16",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "这些判断能分别成立，但放在同一套条件下会不会互相矛盾？",
+    "basis": "跨判断一致性"
+  },
+  {
+    "id": "D18",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "如果顺序调换，或者其中一部分没有发生，整个推断还成立吗？",
+    "basis": "顺序和缺失条件下的推断"
+  },
+  {
+    "id": "D19",
+    "group": "interactions_boundaries",
+    "split": "calibration",
+    "expected": "deep",
+    "text": "Could two individually harmless changes interact and invalidate the overall result?",
+    "basis": "英文相互影响"
+  },
+  {
+    "id": "N01",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "晚上好。",
+    "basis": "问候不表达处理偏好"
+  },
+  {
+    "id": "N02",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "嗯，我知道了。",
+    "basis": "确认收悉"
+  },
+  {
+    "id": "N03",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "这次麻烦你了，谢谢。",
+    "basis": "礼貌不决定档位"
+  },
+  {
+    "id": "N04",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "我有点着急。",
+    "basis": "单独急迫语气不决定深度"
+  },
+  {
+    "id": "N05",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "这不对吧？",
+    "basis": "仅有质疑语气，缺少可判别要求"
+  },
+  {
+    "id": "N06",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "请务必认真对待。",
+    "basis": "郑重语气不等于深入"
+  },
+  {
+    "id": "N08",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "先等一下，我再想想。",
+    "basis": "暂停表达，无引导需求"
+  },
+  {
+    "id": "N09",
+    "group": "neutral_tone",
+    "split": "calibration",
+    "expected": null,
+    "text": "Thanks, I have received it.",
+    "basis": "英文确认收悉"
+  },
+  {
+    "id": "N11",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "消融实验是什么意思？",
+    "basis": "出现专业对象不等于审查证据；无明显处理偏好"
+  },
+  {
+    "id": "N12",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "把标题中的英文字母改为大写。",
+    "basis": "局部任务不应自动被映射为快速档"
+  },
+  {
+    "id": "N13",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "这个按钮叫什么名字？",
+    "basis": "普通询问，不强行补充引导"
+  },
+  {
+    "id": "N14",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "把这里的三行数字加起来。",
+    "basis": "计算任务本身不表达引导偏好"
+  },
+  {
+    "id": "N15",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "请把这些文件名按字母顺序排列。",
+    "basis": "排序对象不决定档位"
+  },
+  {
+    "id": "N16",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "这篇论文是哪年发表的？",
+    "basis": "论文主题不自动触发深入"
+  },
+  {
+    "id": "N18",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "这是关于并发、事务和容错的一份笔记。",
+    "basis": "专业词列表只是材料介绍"
+  },
+  {
+    "id": "N19",
+    "group": "topic_without_preference",
+    "split": "calibration",
+    "expected": null,
+    "text": "What year was this article published?",
+    "basis": "英文事实查询不强配档位"
+  },
+  {
+    "id": "N21",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "参考内容：\n这个结论依赖哪些没有说出来的前提？",
+    "basis": "仅参考内容，不把锚点当作用户要求"
+  },
+  {
+    "id": "N22",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "```text\n有没有反例，或者同样说得通的其他解释？\n```",
+    "basis": "代码围栏中的锚点不是当前要求"
+  },
+  {
+    "id": "N23",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "> 我现在只需要一个能用的答案。",
+    "basis": "引用行不触发"
+  },
+  {
+    "id": "N24",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "原文：\n让我知道该怎么做，以及做完后怎么确认。",
+    "basis": "原文材料不触发"
+  },
+  {
+    "id": "N25",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "<document>这些因素一起变化时，会不会相互影响？</document>",
+    "basis": "文档内容不触发"
+  },
+  {
+    "id": "N26",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "作者说这个结论依赖哪些前提还不清楚。",
+    "basis": "转述不等于用户提出审查要求"
+  },
+  {
+    "id": "N28",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "<!-- 换一种条件，原来的判断还成立吗？ -->",
+    "basis": "注释内容不触发"
+  },
+  {
+    "id": "N29",
+    "group": "quoted_reference",
+    "split": "calibration",
+    "expected": null,
+    "text": "<quote>What unstated assumptions does this conclusion depend on?</quote>",
+    "basis": "英文引用区锚点不触发"
+  },
+  {
+    "id": "N31",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "不调用工具。",
+    "basis": "仅权限约束，不决定回答深度"
+  },
+  {
+    "id": "N32",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "最多240字。",
+    "basis": "仅长度约束，不独立触发"
+  },
+  {
+    "id": "N33",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "用两段说明。",
+    "basis": "仅格式要求，没有任务内容"
+  },
+  {
+    "id": "N34",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "只在这里展示，不要改动任何文件。",
+    "basis": "操作限制不是快速倾向"
+  },
+  {
+    "id": "N35",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "回答用中文。",
+    "basis": "语言要求不决定档位"
+  },
+  {
+    "id": "N36",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "我不想看到过程，但又希望你把中间每个环节都交代出来。",
+    "basis": "相互矛盾的表达，不强选档位"
+  },
+  {
+    "id": "N38",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "从结果开始还是从过程开始，我现在都可以。",
+    "basis": "没有稳定的倾向"
+  },
+  {
+    "id": "N39",
+    "group": "constraints_and_ambiguity",
+    "split": "calibration",
+    "expected": null,
+    "text": "Do not use any tools.",
+    "basis": "英文纯工具约束"
+  }
+]

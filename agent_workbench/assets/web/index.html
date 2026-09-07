@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgentWorkbench</title>
+  <link rel="icon" href="/assets/brand/mobius.png" type="image/png">
+  <link rel="stylesheet" href="/assets/app.css">
+  <link rel="stylesheet" href="/assets/paper-library.css">
+  <script type="importmap">{"imports":{"three":"/assets/vendor/three/three.module.js"}}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="app-identity">
+    <button id="toggleSidebar" class="icon-button" type="button" title="折叠侧栏" aria-label="折叠侧栏"><i data-lucide="panel-left"></i></button>
+    <div class="brand"><img class="brand-mark" src="/assets/brand/mobius.png" alt=""><strong>AgentWorkbench</strong></div>
+    </div>
+    <div class="conversation-toolbar">
+    <div id="workspaceStatus" class="status" title="尚未选择工作区">尚未选择工作区</div>
+    <span id="runStatus">就绪</span>
+    <button id="contextStatus" class="status-button context-status" type="button">上下文 · 检查中</button>
+    <progress id="contextMeter" max="100" value="0" aria-label="上下文占用" hidden></progress>
+    <button id="routeDetails" class="status-button" type="button" title="查看路由详情">引导: --</button>
+    <div id="providerStatus" class="status compact" title="Provider 状态">离线演示</div>
+    <button id="settingsButton" class="icon-button" type="button" title="设置" aria-label="设置"><i data-lucide="settings-2"></i></button>
+    <details class="conversation-menu" id="conversationMenu">
+      <summary title="会话操作" aria-label="会话操作"><i data-lucide="ellipsis"></i></summary>
+      <div class="conversation-menu-items">
+        <button id="clearConversation" type="button"><i data-lucide="eraser"></i>清空当前对话</button>
+        <button id="deleteSession" type="button" class="danger-text"><i data-lucide="trash-2"></i>删除当前会话</button>
+      </div>
+    </details>
+    </div>
+  </header>
+
+  <main id="shell" class="shell">
+    <aside class="sidebar">
+      <div class="sidebar-label">当前会话</div>
+      <div class="session-controls">
+        <select id="sessionSelect" aria-label="会话"></select>
+        <button id="newSession" class="icon-button" type="button" title="新建会话"><i data-lucide="square-pen"></i></button>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" type="button" data-tab="workspace" role="tab" aria-selected="true" aria-controls="workspacePanel"><i data-lucide="folder-open"></i>工作区</button>
+        <button class="tab" type="button" data-tab="knowledge" role="tab" aria-selected="false" aria-controls="knowledgePanel"><i data-lucide="library"></i>知识库</button>
+      </div>
+
+      <section id="workspacePanel" class="panel active">
+        <div class="permission-controls">
+          <select id="permissionMode" aria-label="工作区权限"><option value="read_only">只读</option><option value="ask" selected>审批写入</option><option value="auto_edit">工作区自动编辑</option></select>
+          <button id="workspaceAudit" class="icon-button" type="button" title="查看自动修改记录"><i data-lucide="history"></i></button>
+        </div>
+        <div class="panel-actions">
+          <button id="chooseWorkspace" type="button"><i data-lucide="folder-plus"></i>选择目录</button>
+          <button id="refreshTree" class="icon-button" type="button" title="刷新文件"><i data-lucide="refresh-cw"></i></button>
+          <button id="openWorkspace" class="icon-button" type="button" title="在资源管理器中打开"><i data-lucide="external-link"></i></button>
+        </div>
+        <div id="fileTree" class="asset-list empty">选择目录后显示文件</div>
+      </section>
+
+      <section id="knowledgePanel" class="panel">
+        <button id="openPaperLibrary" class="library-entry" type="button"><i data-lucide="network"></i>论文时间树<i data-lucide="arrow-up-right"></i></button>
+        <div class="panel-actions">
+          <label class="upload-button"><i data-lucide="upload"></i>导入 PDF<input id="pdfInput" type="file" accept="application/pdf" aria-label="导入 PDF"></label>
+          <button id="newCard" type="button"><i data-lucide="plus"></i>新建卡片</button>
+        </div>
+        <h2>论文</h2>
+        <div id="paperList" class="asset-list empty">尚未导入</div>
+        <h2>卡片</h2>
+        <div id="cardList" class="asset-list empty">尚未保存</div>
+        <h2>待确认 <span id="draftCount">0</span></h2>
+        <div id="draftList" class="asset-list"></div>
+        <section class="knowledge-health" aria-label="索引状态">
+          <div class="health-toolbar">
+            <h2>索引状态</h2>
+            <button id="auditKnowledge" class="icon-button small" type="button" title="检查知识库一致性" aria-label="检查知识库一致性"><i data-lucide="refresh-cw"></i></button>
+          </div>
+          <details id="knowledgeAudit">
+            <summary><span id="knowledgeStatus" class="form-status" role="status">尚未检查</span></summary>
+            <ul id="knowledgeIssues" class="issue-list"></ul>
+          </details>
+          <button id="repairKnowledge" class="quiet-button" type="button" disabled><i data-lucide="wrench"></i>修复索引</button>
+          <p id="knowledgeActionStatus" class="form-status" role="status"></p>
+        </section>
+      </section>
+    </aside>
+
+    <section class="conversation">
+      <div id="messages" class="messages">
+        <div class="empty-state"><div class="mobius-stage" aria-hidden="true"><img class="empty-mark" src="/assets/brand/mobius.png" alt=""></div><strong>AgentWorkbench</strong><span>新任务</span></div>
+      </div>
+      <form id="composer" class="composer">
+        <div class="composer-inner">
+          <div id="attachmentTray" class="attachment-tray" hidden></div>
+          <div id="paperScope" class="paper-scope" hidden><i data-lucide="book-open"></i><span id="paperScopeName"></span><button id="clearPaperScope" class="icon-button small" type="button" title="取消论文范围"><i data-lucide="x"></i></button></div>
+          <textarea id="prompt" rows="2" aria-label="任务内容" placeholder="有什么需要一起完成？"></textarea>
+          <div class="composer-actions">
+            <button id="attachButton" class="icon-button" type="button" title="添加文件或图片" aria-label="添加文件或图片"><i data-lucide="plus"></i></button>
+            <input id="attachmentInput" type="file" multiple hidden aria-label="添加消息附件">
+            <button id="composerModel" class="composer-model" type="button" title="选择模型"><span id="composerModelName">离线演示</span><i data-lucide="chevron-down"></i></button>
+            <label class="reasoning-control"><i data-lucide="brain" aria-hidden="true"></i><span class="reasoning-select"><select id="reasoningEffort" aria-label="模型推理强度" disabled><option value="">模型默认</option></select><i data-lucide="chevron-down" aria-hidden="true"></i></span></label>
+            <button id="sendButton" type="submit" class="primary icon-button" title="发送" aria-label="发送"><i data-lucide="arrow-up"></i></button>
+          </div>
+        </div>
+        <p id="composerStatus" class="composer-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section id="paperLibrary" class="paper-library" hidden aria-label="论文时间树">
+      <header class="library-heading"><div><h1>论文时间树</h1><span id="libraryCount"></span></div><div class="library-heading-actions"><button id="libraryImport" type="button"><i data-lucide="plus"></i>导入论文</button><button id="closePaperLibrary" class="icon-button" type="button" title="返回对话"><i data-lucide="message-square"></i></button></div></header>
+      <div class="library-toolbar">
+        <div class="library-modes" role="group" aria-label="论文显示方式"><button id="treeMode" type="button" aria-pressed="true" title="三维论文树"><i data-lucide="network"></i>树</button><button id="listMode" type="button" aria-pressed="false" title="论文列表"><i data-lucide="list"></i>列表</button></div>
+        <input id="paperSearch" type="search" aria-label="搜索论文" placeholder="搜索标题、出处、主题">
+        <select id="paperTopicFilter" aria-label="筛选主题"><option value="">全部主题</option></select><button id="renamePaperTopic" type="button" class="icon-button" title="重命名或合并选中主题" hidden><i data-lucide="pencil"></i></button><select id="paperYearFilter" aria-label="筛选年份"><option value="">全部年份</option></select>
+        <button id="treeReset" type="button" class="icon-button" title="恢复树视角"><i data-lucide="scan"></i></button>
+      </div>
+      <p id="libraryStatus" class="form-status" role="status"></p>
+      <div id="libraryBody" class="library-body">
+        <div class="library-scene">
+          <div id="treeViewport" class="tree-viewport"></div>
+          <div id="libraryEmpty" class="library-empty"><img src="/assets/brand/mobius.png" alt=""><strong>暂无匹配论文</strong></div>
+          <div id="paperTable" class="paper-table-wrap" hidden><table><thead><tr><th>年份</th><th>论文</th><th>出处</th><th>主题</th><th>分类</th></tr></thead><tbody id="paperTableBody"></tbody></table></div>
+        </div>
+        <aside id="paperDetail" class="paper-detail" hidden>
+          <div class="paper-detail-heading"><span>论文详情</span><button id="closePaperDetail" type="button" class="icon-button small" title="关闭论文详情"><i data-lucide="x"></i></button></div>
+          <h2 id="paperDetailTitle"></h2><p id="paperDetailMeta"></p><p id="paperAuthors"></p><p id="paperTopic"></p>
+          <div class="paper-detail-actions"><button id="readPaper" type="button"><i data-lucide="book-open"></i>读原文</button><button id="askPaper" type="button"><i data-lucide="message-square"></i>围绕此文提问</button></div>
+          <h3>分类判断</h3><p id="paperReason"></p><p id="paperClassificationStatus" role="status"></p><p id="paperUsage"></p>
+          <div class="paper-detail-actions"><button id="classifyPaper" type="button"><i data-lucide="sparkles"></i>模型分类</button><button id="cancelPaperClassification" type="button" hidden><i data-lucide="square"></i>取消分类</button></div>
+          <details id="paperEditFields"><summary>编辑文献信息与分类</summary><div class="paper-edit-grid">
+            <label>标题<input id="paperEdit_title" maxlength="500"></label><label>作者<input id="paperEdit_authors"></label>
+            <label>年份<input id="paperEdit_year" type="number" min="1600" max="2200"></label><label>年份类型<select id="paperEdit_year_type"><option value="unknown">待确认</option><option value="published">正式发表</option><option value="preprint">预印本</option></select></label>
+            <label>会议 / 期刊 / 平台<input id="paperEdit_venue" maxlength="180"></label><label>DOI<input id="paperEdit_doi" maxlength="180"></label>
+            <label>主题<input id="paperEdit_topic" maxlength="60"></label><label>子方向<input id="paperEdit_subtopic" maxlength="80"></label><label>标签<input id="paperEdit_tags"></label>
+            <button id="savePaperMetadata" type="button" class="primary"><i data-lucide="check"></i>保存修改</button>
+          </div></details><p id="paperManualNote"></p>
+          <h3>文献字段依据</h3><div id="paperEvidence"></div>
+          <button id="deleteLibraryPaper" type="button" class="quiet-button danger-text"><i data-lucide="trash-2"></i>删除论文</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="paperReader" class="paper-reader">
+    <div class="dialog-heading"><h2 id="paperReaderTitle"></h2><button id="closePaperReader" class="icon-button" type="button" title="关闭论文阅读"><i data-lucide="x"></i></button></div>
+    <div class="paper-reader-toolbar"><button id="paperPrevious" class="icon-button" type="button" title="上一页"><i data-lucide="chevron-left"></i></button><span id="paperPageNumber"></span><button id="paperNext" class="icon-button" type="button" title="下一页"><i data-lucide="chevron-right"></i></button><span id="paperReaderStatus" role="status"></span></div>
+    <div class="paper-reader-content"><img id="paperPageImage" alt="PDF 页面"><details><summary>本页提取正文</summary><pre id="paperPageText"></pre></details></div>
+  </dialog>
+
+  <dialog id="settingsDialog">
+    <form id="settingsForm">
+      <div class="dialog-heading"><h2>设置</h2><button id="closeSettings" type="button" class="icon-button" title="关闭设置"><i data-lucide="x"></i></button></div>
+      <label class="toggle-row"><input id="autoClassifyPapers" type="checkbox">上传论文后自动调用模型分类</label>
+      <fieldset>
+        <legend>连接配置</legend>
+        <label>模式<select id="providerMode"><option value="mock">离线演示</option><option value="openai-compatible">OpenAI-compatible</option></select></label>
+        <label>Base URL<input id="baseUrl" type="url" autocomplete="off"></label>
+        <div class="field-with-action">
+          <label>模型 ID<input id="modelId" type="text" role="combobox" aria-controls="modelChoices" aria-expanded="false" autocomplete="off"></label>
+          <button id="loadModels" type="button"><i data-lucide="list"></i>加载模型</button>
+        </div>
+        <div id="modelChoices" role="listbox" aria-label="可用模型" hidden></div>
+        <label>API Key<input id="apiKey" type="password" autocomplete="new-password" placeholder="已保存的 Key 不会回显"></label>
+      </fieldset>
+      <fieldset>
+        <legend>模型限制</legend>
+        <div class="settings-grid">
+          <label>上下文窗口 · tokens<input id="contextWindow" type="number" min="1" step="1" placeholder="32768" aria-describedby="tokenDefaults"></label>
+          <label>最大输出 · tokens<input id="maxOutputTokens" type="number" min="1" step="1" placeholder="8192" aria-describedby="tokenDefaults"></label>
+          <p id="tokenDefaults" class="muted" role="status"></p>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>本地模型</legend>
+        <div class="model-status">
+          <strong>本地 E5</strong>
+          <span id="localModelStatus">检查中</span>
+          <button id="reloadLocalModel" type="button" class="icon-button" title="重新加载本地模型"><i data-lucide="refresh-cw"></i></button>
+        </div>
+      </fieldset>
+      <section class="guidance-settings" aria-label="动态引导">
+        <label class="toggle-row"><input id="guidanceEnabled" type="checkbox">动态引导</label>
+        <label class="toggle-row"><input id="linkReasoning" type="checkbox">同时调整模型推理强度</label>
+        <details id="guidanceEditor">
+          <summary>编辑三档引导</summary>
+          <div id="guidanceProfiles"></div>
+          <button id="resetGuidance" type="button"><i data-lucide="rotate-ccw"></i>恢复默认引导</button>
+        </details>
+      </section>
+      <section class="data-settings"><span id="dataLocation" class="form-status"></span><button id="migrateData" type="button"><i data-lucide="folder-input"></i>迁移数据目录</button></section>
+      <p id="settingsStatus" class="form-status"></p>
+      <div id="providerDiagnostics" class="diagnostics" role="status"></div>
+      <div class="dialog-actions">
+        <button id="providerTest" type="button">检查模型列表</button>
+        <button id="providerDiagnose" type="button">能力诊断</button>
+        <button id="saveSettings" type="submit" class="primary"><i data-lucide="check"></i>保存设置</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="routeDialog">
+    <div class="dialog-heading"><h2>路由详情</h2><button id="closeRoute" type="button" class="icon-button" title="关闭路由详情"><i data-lucide="x"></i></button></div>
+    <dl id="routeDetailList" class="detail-list"></dl>
+  </dialog>
+
+  <dialog id="attachmentPreviewDialog" class="wide-dialog">
+    <div class="dialog-heading"><h2 id="attachmentPreviewTitle">附件</h2><button id="closeAttachmentPreview" class="icon-button" type="button" title="关闭附件预览"><i data-lucide="x"></i></button></div>
+    <p id="attachmentPreviewStatus" class="form-status" role="status"></p><div id="attachmentPreviewBody"></div>
+  </dialog>
+  <dialog id="contextDialog">
+    <div class="dialog-heading"><h2>上下文与用量</h2><button id="closeContext" class="icon-button" type="button" title="关闭上下文详情"><i data-lucide="x"></i></button></div>
+    <dl id="contextDetails" class="detail-list"></dl>
+    <p id="compactionStatus" class="form-status" role="status" aria-live="polite"></p>
+    <div class="dialog-actions">
+      <button id="viewSummary" type="button"><i data-lucide="file-text" aria-hidden="true"></i>查看摘要</button>
+      <button id="compactNow" type="button" title="调用当前模型生成摘要，产生额外用量"><i data-lucide="minimize-2" aria-hidden="true"></i>立即压缩</button>
+      <button id="cancelCompaction" type="button" hidden><i data-lucide="square" aria-hidden="true"></i>取消压缩</button>
+    </div>
+  </dialog>
+  <dialog id="summaryDialog" class="wide-dialog">
+    <div class="dialog-heading"><h2>上下文摘要</h2><button id="closeSummary" class="icon-button" type="button" title="关闭摘要"><i data-lucide="x"></i></button></div>
+    <p id="summaryMeta" class="form-status"></p><pre id="summaryContent" class="summary-content"></pre>
+  </dialog>
+  <dialog id="auditDialog" class="wide-dialog"><div class="dialog-heading"><h2>自动修改记录</h2><button id="closeAudit" class="icon-button" type="button" title="关闭修改记录"><i data-lucide="x"></i></button></div><pre id="auditContent"></pre></dialog>
+  <dialog id="draftDialog">
+    <form id="draftForm">
+      <div class="dialog-heading"><h2>知识卡片草稿</h2><button id="closeDraft" class="icon-button" type="button" title="关闭卡片草稿"><i data-lucide="x"></i></button></div>
+      <p id="draftReason" class="form-status"></p>
+      <label>标题<input id="draftTitle" maxlength="160" required></label>
+      <label>正文<textarea id="draftContent" rows="10" maxlength="50000" required></textarea></label>
+      <label>标签<input id="draftTags"></label><label>来源<input id="draftSources"></label>
+      <details><summary>原内容 / 重复检查</summary><pre id="draftOriginal"></pre></details>
+      <p id="draftStatus" class="form-status"></p>
+      <div class="dialog-actions"><button id="discardDraft" type="button">忽略草稿</button><button id="confirmDraft" type="submit" class="primary"><i data-lucide="check"></i>确认保存</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="fileDialog" class="wide-dialog">
+    <div class="dialog-heading"><h2 id="fileTitle">文件预览</h2><button id="closeFile" type="button" class="icon-button" title="关闭文件预览"><i data-lucide="x"></i></button></div>
+    <div id="fileMeta" class="file-meta"></div>
+    <pre id="fileContent" class="file-content"></pre>
+  </dialog>
+
+  <dialog id="cardDialog">
+    <form id="cardForm">
+      <div class="dialog-heading"><h2 id="cardDialogTitle">新建卡片</h2><button id="closeCard" type="button" class="icon-button" title="关闭卡片"><i data-lucide="x"></i></button></div>
+      <input id="cardId" type="hidden">
+      <label>标题<input id="cardTitle" required maxlength="160"></label>
+      <label>标签<input id="cardTags" placeholder="router, research"></label>
+      <label>来源<input id="cardSources" placeholder="paper.pdf#page=3"></label>
+      <label>正文<textarea id="cardContent" rows="10" required></textarea></label>
+      <p id="cardStatus" class="form-status"></p>
+      <div class="dialog-actions">
+        <button id="deleteCard" type="button" class="danger" hidden>删除</button>
+        <button type="submit" class="primary">保存</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/assets/vendor/lucide.min.js"></script>
+  <script src="/assets/vendor/markdown-it.min.js"></script>
+  <script src="/assets/vendor/purify.min.js"></script>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>
